@@ -26,7 +26,7 @@ public class Pracownik {
     }
 
     public void wynagrodzenie() {
-        stawkaPodstawowa = stawkaPodstawowa;
+        stawkaPodstawowa = stawkaPodstawowa();
         if (przepracowaneGodziny <= 40) {
             System.out.println("Wynagrodzenie wynosi " + przepracowaneGodziny * stawkaPodstawowa + "zl.");
         } else if (przepracowaneGodziny > 40 && przepracowaneGodziny <= 60) {
